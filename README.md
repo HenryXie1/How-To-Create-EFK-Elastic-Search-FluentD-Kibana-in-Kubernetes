@@ -26,7 +26,7 @@ spec:
   capacity:
     storage: 50Gi
   accessModes:
-  - ReadWriteMany # required
+  - ReadWriteOnce # required
   nfs:
     server: 123.123.123.123
     path: "/EFK-Data"
