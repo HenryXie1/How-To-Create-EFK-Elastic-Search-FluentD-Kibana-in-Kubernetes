@@ -5,7 +5,7 @@
 ### Preparation
 * Install helm. Please refer official [github tutorial](https://github.com/oracle/mysql-operator/blob/master/docs/tutorial.md)
 * Download efk stack config files from Github. It is based on [Oracle Cloudnative Guide](https://cloudnative.oracle.com/logging.md). However I update it to use NFS instead of local FS and change elastic search repicacount from 2 to 1 for testing. For Production, we need to use local fast filesystem and replicat be at least 2.
-
+* Update NFS mountpath to be Elastic Data directory in the yaml. ie  mountPath: /data  to be mountPath: /usr/share/elasticsearch/data
 ```
 wget https://github.com/HenryXie1/How-To-Create-EFK-Elastic-Search-FluentD-Kibana-in-Kubernetes/raw/master/efk.tar.gz
 tar -zxvf efk.tar.gz
