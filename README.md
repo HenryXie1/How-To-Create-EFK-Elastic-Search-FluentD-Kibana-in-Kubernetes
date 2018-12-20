@@ -1,6 +1,6 @@
 ## How To Create EFK(Elastic Search, FluentD, Kibana) in Kubernetes
 ### Requirement
-   We need to collect ,transfer, store, analyze logs of K8S pods as well as K8S logs itself. We need to track applicatoin logs of each Pod and consider dynamic nature of containers. So we adapt EFK for that. We also plan to store log data in NFS. Refer more details in [Oracle Cloudnative Guide](https://cloudnative.oracle.com/logging.md)
+   We need to collect ,transfer, store, analyze logs of K8S pods as well as K8S logs itself. We need to track applicatoin logs of each Pod and consider dynamic nature of containers. So we adapt EFK for that. We also plan to store log data in NFS. Refer more details in [Oracle Cloudnative Guide](https://cloudnative.oracle.com/)
 
 ### Preparation
 * Install helm. Please refer official [github tutorial](https://github.com/oracle/mysql-operator/blob/master/docs/tutorial.md)
